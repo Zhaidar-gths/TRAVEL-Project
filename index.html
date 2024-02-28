@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traveling</title>
+    <!-- style Css Link -->
+    <link rel="stylesheet" href="style.css">
+    <!-- style Css Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+
+    <!-- Google Font links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
+    <!-- Google Font links -->
+</head>
+
+<body>
+
+    <!-- Header Start -->
+   <header>
+<a href="#" class="logo"><span>T</span>ravel</a>
+
+                <nav class="links">
+                    <a href="#home">home</a>
+                    <a href="#book">book</a>
+                    <a href="#packages">packages</a>
+                    <a href="#service">service</a>
+                    <a href="#galery">galery</a>
+                    <a href="#review">review</a>
+                    <a href="#contact">contact</a>
+                </nav>
+
+
+                <div class="icons">
+                 <i class="fas fa-search" id="search-btn" ></i>
+                  <!-- Иконка для открытия всплывающего окна -->
+                 <i class="fas fa-user" id="login-btn"></i>
+                </div>
+                   <!-- Поле для поиска -->
+            <form action="" class="search-bar-container">
+                <input type="search" id="search-bar" placeholder="Search here...">
+                <label for="search-bar"  class="fas fa-search" ></label>
+            </form>
+        </header>
+ <!-- header section ends -->
+
+
+
+    <!-- Всплывающее окно для логина -->
+    <div class="overlay" id="overlay"></div>
+    <div class="popup" id="popup">
+   
+        <!-- Форма для логина -->
+        <form>
+             
+            <h3>Login</h3>
+            <input type="email" class="box" placeholder="Enter your email">
+            <input type="password" class="box" placeholder="Enter your password">
+            <input type="submit" value="Login now" class="btn"><br><br>
+            <input type="checkbox" id="remember">
+            <label for="remember">Remember me</label>
+            <p>Forgot password? <a href="#">Click here</a></p>
+            <p>Don't have an account? <a href="#">Register now</a></p>
+                <!-- Иконка для закрытия окна -->
+        <i class="fas fa-times" id="from-close"></i>
+        </form>
+    </div>
+    <!-- Всплывающее окно для логина ends -->
+
+<!-- home section starts -->
+<section class="home" id="home">
+<div class="content">
+    <h3>adventure is worthwhile</h3>
+    <p>dicover new places with us, adventure awaits</p>
+    <a href="#" class="btn">discover more</a>
+</div>
+
+
+<div class="controls">
+   <span class="vid-btn active" data-src='vid-1.mov'></span>
+   <!-- Атрибут data-src в HTML предназначен для хранения пользовательских данных    В контексте данного кода:атрибут  используется для хранения пути к видеофайлу, который будет воспроизводиться при нажатии на кнопку управления видео. -->
+   <span class="vid-btn" data-src='images/vid-2.mov'></span>
+   <span class="vid-btn" data-src='images/vid-3.mov'></span>
+   <span class="vid-btn" data-src='images/vid-4.mov'></span>
+   <span class="vid-btn" data-src='images/vid-5.mov'></span>
+</div>
+
+
+<div class="video-container">
+    <video src="vid-1.mp4"  id="video-slider"loop autoplay muted></video>
+</div>
+</section>
+<!-- home section ends -->
+
+    
+
+
+
+
+
+<script src="./script.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+

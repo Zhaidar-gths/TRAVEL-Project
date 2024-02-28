@@ -1,0 +1,309 @@
+* {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    /* бұл сөздерді бас әріппен жазады */
+    outline: none;
+    border: none;
+    text-decoration: none;
+
+}
+
+html {
+    font-size: 62.5%;
+}
+
+section {
+    padding: 40px 9%;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 10px;
+    background: #fda300;
+    color: #fff;
+    padding: 13px 10px;
+    border: 3px solid ;
+    cursor: pointer;
+    font-size: 17px;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: #bb620a;
+    color: #fff;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #212321f4;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 26px 9%;
+}
+
+header .logo {
+    font-size: 29px;
+    font-weight: bolder;
+    color: white;
+    text-transform: uppercase;
+}
+
+header .logo span {
+    color: #fda300;
+}
+
+header .links a {
+    color: #fff;
+    font-size: 20px;
+    margin: 10px;
+}
+
+header .links a:hover {
+    color: #ffc619;
+}
+
+header .icons i {
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+    margin-right: 15px;
+}
+
+header .icons i:hover {
+    color: #ffc619;
+}
+
+header .search-bar-container {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    padding: 15px 20px;
+    background: #212321f6;
+    border-top: 3px solid rgba(255, 255, 225, 2);
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Центрируем содержимое горизонтально */
+    z-index: 1001;
+    display: none;
+}
+
+header .search-bar-container.active {
+    display: flex; /* Используем flex вместо block, чтобы элементы были в одной строке */
+}
+
+header .search-bar-container #search-bar {
+    width: 100%; width: -35px; /* Учитываем ширину иконки поиска */
+    padding: 5px;
+    text-transform: none;
+    color: #212321f1;
+    font-size: 19px;
+    border-radius: 10px;
+}
+
+header .search-bar-container label {
+    color: #fff;
+    cursor: pointer;
+    font-size: 23px;
+    margin-left: 10px; /* Добавляем отступ справа для разделения между иконкой и текстовым полем */
+}
+
+header .search-bar-container label:hover {
+    color: #ffc619;
+}
+
+
+
+
+
+
+
+/* хедер логин */
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(33, 33, 30, 0.5);
+    z-index: 1000;
+}
+
+
+
+/* Стили для всплывающего окна логина */
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 1001;
+}
+
+.popup form {
+    position: relative;
+}
+
+/* Стили для иконки закрытия окна */
+#from-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    color: #000;
+    cursor: pointer;
+}
+
+/* Дополнительные стили для иконки закрытия окна (если нужно) */
+#from-close:hover {
+    color: red;
+}
+
+
+
+.popup form h3 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.popup form .box {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #2a2518;
+    border-radius: 5px;
+}
+
+.popup form .box:hover {
+    border-color: #e49f26;
+}
+
+.popup form .btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #f0a82a;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.popup form .btn:hover {
+    background-color: #886032;
+}
+
+.popup form p {
+    margin-top: 15px;
+    font-size: 12px;
+}
+
+.popup form a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.popup form a:hover {
+    text-decoration: underline;
+}
+
+
+/* Стили для "Remember me" и чекбокса */
+
+#popup form p {
+    display: flex;
+    /* Используем flexbox */
+    align-items: center;
+    /* Выравниваем элементы по вертикали */
+}
+
+#popup label[for="remember"] {
+    margin-right: 5px;
+    /* Отступ справа */
+    color: #555;
+    /* Цвет текста */
+    font-size: 14px;
+    /* Размер шрифта */
+
+}
+
+
+
+
+
+
+/* bacraund video */
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    min-height: 730px;
+}
+
+.home .content {
+    text-align: center;
+}
+
+.home .content>h3 {
+    font-size: 67px;
+    color: #fff;
+    text-transform: uppercase;
+    text-shadow: 4.8px .8px rgba(0, 0, 0, 0.1);
+}
+
+.home .content>p {
+    font-size: 27px;
+    color: #fff;
+    padding: 10px 0;
+}
+
+.video-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.home .video-container video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  
+}
+
+.home .controls {
+    padding: 10px;
+    border-radius: 25px;
+    background: rgba(0, 0, 0, .7);
+    position: relative;
+    top: 100px;
+}
+
+.home .controls .vid-btn {
+    height: 15px;
+    width: 15px;
+    display: inline-block;
+    border-radius: 60%;
+    background: #fff;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.home .controls .vid-btn.active {
+    background-color: orange;
+} 
