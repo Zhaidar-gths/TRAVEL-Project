@@ -19,6 +19,21 @@ section {
     padding: 40px 9%;
 }
 
+.heading{
+    text-align: center;
+    padding: 25px 0;
+}
+.heading span{
+    font-size: 3.5rem;
+    background: rgba(255, 165, 0, .2);
+    color: orange;
+    border-radius: 5px;
+    padding: 12px 11px;
+}
+.heading span.space{
+    background: none;
+}
+
 .btn {
     display: inline-block;
     margin-top: 10px;
@@ -62,11 +77,14 @@ header .logo span {
 header .links a {
     color: #fff;
     font-size: 20px;
-    margin: 10px;
+    margin: 10px; 
 }
 
 header .links a:hover {
-    color: #ffc619;
+  color: orange;
+
+
+
 }
 
 header .icons i {
@@ -224,9 +242,8 @@ header .search-bar-container label:hover {
 
 #popup form p {
     display: flex;
-    /* Используем flexbox */
     align-items: center;
-    /* Выравниваем элементы по вертикали */
+   
 }
 
 #popup label[for="remember"] {
@@ -267,7 +284,7 @@ header .search-bar-container label:hover {
 .home .content>p {
     font-size: 27px;
     color: #fff;
-    padding: 10px 0;
+    padding: 20px 0;
 }
 
 .video-container {
@@ -291,19 +308,72 @@ header .search-bar-container label:hover {
     border-radius: 25px;
     background: rgba(0, 0, 0, .7);
     position: relative;
-    top: 100px;
+    top: 90px;
 }
 
 .home .controls .vid-btn {
     height: 15px;
     width: 15px;
     display: inline-block;
-    border-radius: 60%;
+    border-radius: 70%;
     background: #fff;
     cursor: pointer;
-    margin: 10px;
+    margin: 8px;
 }
 
 .home .controls .vid-btn.active {
     background-color: orange;
 } 
+
+
+
+
+/* ABOUT US  */
+
+
+
+
+
+
+
+/* BOOK NOW SECTION */
+.book .row{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    align-items: center;
+}
+
+.book .row .image{
+    flex: 0.9 1 140px;
+}
+
+.book .row .image img{
+    width: 100%;
+}
+
+.book .row form{
+    flex: 1 1 140px;
+    padding: 20px;
+    box-shadow: 0 16px 32px rgba(0, 0, 0, .1);
+    border-radius: 10px;
+}
+
+.book .row form .inputBox{
+    padding: 10px 0;
+}
+
+.book .row form .inputBox input{
+    width: 100%;
+    padding: 5px;
+    border: 3px solid rgba(0, 0, 0, .1);
+    font-size: 15px;
+    color: #000;
+    text-transform: none;
+}
+
+.book .row form .inputBox h3{
+    font-size: 20px;
+    padding: 10px 0;
+    color: #666;
+}

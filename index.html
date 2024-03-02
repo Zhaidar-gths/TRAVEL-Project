@@ -22,42 +22,42 @@
 <body>
 
     <!-- Header Start -->
-   <header>
-<a href="#" class="logo"><span>T</span>ravel</a>
+    <header>
+        <a href="#" class="logo"><span>T</span>ravel</a>
 
-                <nav class="links">
-                    <a href="#home">home</a>
-                    <a href="#book">book</a>
-                    <a href="#packages">packages</a>
-                    <a href="#service">service</a>
-                    <a href="#galery">galery</a>
-                    <a href="#review">review</a>
-                    <a href="#contact">contact</a>
-                </nav>
+        <nav class="links">
+            <a href="#home">home</a>
+            <a href="#book">book</a>
+            <a href="#packages">packages</a>
+            <a href="#service">service</a>
+            <a href="#galery">galery</a>
+            <a href="#review">review</a>
+            <a href="#contact">contact</a>
+        </nav>
 
 
-                <div class="icons">
-                 <i class="fas fa-search" id="search-btn" ></i>
-                  <!-- Иконка для открытия всплывающего окна -->
-                 <i class="fas fa-user" id="login-btn"></i>
-                </div>
-                   <!-- Поле для поиска -->
-            <form action="" class="search-bar-container">
-                <input type="search" id="search-bar" placeholder="Search here...">
-                <label for="search-bar"  class="fas fa-search" ></label>
-            </form>
-        </header>
- <!-- header section ends -->
+        <div class="icons">
+            <i class="fas fa-search" id="search-btn"></i>
+            <!-- Иконка для открытия всплывающего окна -->
+            <i class="fas fa-user" id="login-btn"></i>
+        </div>
+        <!-- Поле для поиска -->
+        <form action="" class="search-bar-container">
+            <input type="search" id="search-bar" placeholder="Search here...">
+            <label for="search-bar" class="fas fa-search"></label>
+        </form>
+    </header>
+    <!-- header section ends -->
 
 
 
     <!-- Всплывающее окно для логина -->
     <div class="overlay" id="overlay"></div>
     <div class="popup" id="popup">
-   
+
         <!-- Форма для логина -->
         <form>
-             
+
             <h3>Login</h3>
             <input type="email" class="box" placeholder="Enter your email">
             <input type="password" class="box" placeholder="Enter your password">
@@ -66,54 +66,117 @@
             <label for="remember">Remember me</label>
             <p>Forgot password? <a href="#">Click here</a></p>
             <p>Don't have an account? <a href="#">Register now</a></p>
-                <!-- Иконка для закрытия окна -->
-        <i class="fas fa-times" id="from-close"></i>
+            <!-- Иконка для закрытия окна -->
+            <i class="fas fa-times" id="from-close"></i>
         </form>
     </div>
     <!-- Всплывающее окно для логина ends -->
 
-<!-- home section starts -->
-<section class="home" id="home">
-<div class="content">
-    <h3>adventure is worthwhile</h3>
-    <p>dicover new places with us, adventure awaits</p>
-    <a href="#" class="btn">discover more</a>
-</div>
+    <!-- home section starts -->
+    <section class="home" id="home">
+        <div class="content">
+            <h3>adventure is worthwhile</h3>
+            <p>dicover new places with us, adventure awaits</p>
+            <a href="#" class="btn">discover more</a>
+        </div>
 
 
-<div class="controls">
-   <span class="vid-btn active" data-src='vid-1.mov'></span>
-   <!-- Атрибут data-src в HTML предназначен для хранения пользовательских данных    В контексте данного кода:атрибут  используется для хранения пути к видеофайлу, который будет воспроизводиться при нажатии на кнопку управления видео. -->
-   <span class="vid-btn" data-src='images/vid-2.mov'></span>
-   <span class="vid-btn" data-src='images/vid-3.mov'></span>
-   <span class="vid-btn" data-src='images/vid-4.mov'></span>
-   <span class="vid-btn" data-src='images/vid-5.mov'></span>
-</div>
+        <div class="controls">
+            <span class="vid-btn active" data-src='images/vid-1.mp4'></span>
+            <!-- Атрибут data-src в HTML предназначен для хранения пользовательских данных    В контексте данного кода:атрибут  используется для хранения пути к видеофайлу, который будет воспроизводиться при нажатии на кнопку управления видео. -->
+            <span class="vid-btn" data-src='images/vid-2.mp4'></span>
+            <span class="vid-btn" data-src='images/vid-3.mp4'></span>
+            <span class="vid-btn" data-src='images/vid-4.mp4'></span>
+            <span class="vid-btn" data-src='images/vid-5.mp4'></span>
+        </div>
 
 
-<div class="video-container">
-    <video src="vid-1.mp4"  id="video-slider"loop autoplay muted></video>
-</div>
-</section>
-<!-- home section ends -->
+        <div class="video-container">
+            <video src="images/vid-1.mp4" id="video-slider" loop autoplay muted></video>
+        </div>
 
-    
+    </section>
+    <!-- home section ends -->
+   
+
+    <!-- ABOUT US START SECTION -->
+    <section class="about" id="about">
+        <h1 class="heading">
+            <span>a</span>
+            <span>b</span>
+            <span>o</span>
+            <span>u</span>
+            <span>t</span>
+            <span class="space"></span>
+            <span>u</span>
+            <span>s</span>
+        </h1>
+
+        <div class="us">
+
+            <div class="image">
+                <img src="https://th.bing.com/th/id/OIP.brGB5Fs7FwN1t5n7ptFhdgHaEK?rs=1&pid=ImgDetMain" alt="">
+            </div>
 
 
 
+        </div>
+    </section>
+    <!-- ABOUT US ENDS SECTION -->
 
 
-<script src="./script.js"></script>
-<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <section class="book" id="book">
+
+        <h1 class="heading">
+            <span>b</span>
+            <span>o</span>
+            <span>o</span>
+            <span>k</span>
+            <span class="space"></span>
+            <span>n</span>
+            <span>o</span>
+            <span>w</span>
+        </h1>
+        <div class="row">
+
+            <div class="image">
+            <img src="https://img.freepik.com/free-vector/traveling-concept-illustration_114360-5843.jpg?t=st=1709385699~exp=1709389299~hmac=5e981f00c7085fc48bbac68ecc4f010668d247cf90646ac795081559840f49f4&w=826"
+                alt="">  
+            </div>
+
+        <form action="">
+            <div class="inputBox">
+                <h3>where to</h3>
+                <input type="text" placeholder="place name">
+            </div>
+      
+      
+            <div class="inputBox">
+                <h3>how many</h3>
+                <input type="text" placeholder="number of guests">
+            </div>
+       
+       
+            <div class="inputBox">
+                <h3>arrivals</h3>
+                <input type="date">
+            </div>
+            <div class="inputBox">
+                <h3>leaving</h3>
+                <input type="date">
+            </div>
+            <input type="submit" class="btn" value="book now" >
+        </div>
+        
+        </form>
+    </section>
+
+
+
+    <script src="./script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
 </body>
 
 </html>
-
-
-
-
-
-
-
-
