@@ -10,6 +10,7 @@
     <!-- style Css Link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
     <!-- Google Font links -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -40,6 +41,8 @@
             <i class="fas fa-search" id="search-btn"></i>
             <!-- Иконка для открытия всплывающего окна -->
             <i class="fas fa-user" id="login-btn"></i>
+            <!-- иконка для корзины -->
+            <a href="./cart/index.html"><i class="fas fa-bookmark" id="cart-btn"></i></a>
         </div>
         <!-- Поле для поиска -->
         <form action="" class="search-bar-container">
@@ -97,10 +100,12 @@
 
     </section>
     <!-- home section ends -->
-   
+
+
+
 
     <!-- ABOUT US START SECTION -->
-    <section class="about" id="about">
+    <section class="about go" id="about">
         <h1 class="heading">
             <span>a</span>
             <span>b</span>
@@ -111,21 +116,37 @@
             <span>u</span>
             <span>s</span>
         </h1>
-
-        <div class="us">
-
-            <div class="image">
-                <img src="https://th.bing.com/th/id/OIP.brGB5Fs7FwN1t5n7ptFhdgHaEK?rs=1&pid=ImgDetMain" alt="">
+        <br><br>
+        <p>
+            Our company is dedicated to providing the best travel experiences to
+            our customers. We specialize in creating custom itineraries that cater
+            to each individual's interests and preferences.
+        </p>
+        <div class="team-members">
+            <div class="team-member">
+                <img src="https://www.careerchange.com/wp-content/uploads/2020/03/31153442_l.jpg" alt="" />
+                <h4>John Smith</h4>
+                <p>Founder & CEO</p>
             </div>
-
-
-
+            <div class="team-member">
+                <img src="https://uploads-ssl.webflow.com/644b8b6b28f2fe4c473f1785/64591b27156c4ded7c55cee0_4B5A4344.jpg"
+                    alt="" />
+                <h4>Jane Doe</h4>
+                <p>Head of Operations</p>
+            </div>
+            <div class="team-member">
+                <img src="https://th.bing.com/th/id/R.ae3b95e4ce25b4c91afe7287b90cf8a8?rik=LsWhxlMYZjgJhg&pid=ImgRaw&r=0"
+                    alt="" />
+                <h4>David Lee</h4>
+                <p>Marketing Director</p>
+            </div>
         </div>
     </section>
     <!-- ABOUT US ENDS SECTION -->
 
 
-    <section class="book" id="book">
+    <!-- BOOK SECTION START  -->
+    <section class="book go" id="book">
 
         <h1 class="heading">
             <span>b</span>
@@ -140,42 +161,450 @@
         <div class="row">
 
             <div class="image">
-            <img src="https://img.freepik.com/free-vector/traveling-concept-illustration_114360-5843.jpg?t=st=1709385699~exp=1709389299~hmac=5e981f00c7085fc48bbac68ecc4f010668d247cf90646ac795081559840f49f4&w=826"
-                alt="">  
+                <img src="https://img.freepik.com/free-vector/traveling-concept-illustration_114360-5843.jpg?t=st=1709385699~exp=1709389299~hmac=5e981f00c7085fc48bbac68ecc4f010668d247cf90646ac795081559840f49f4&w=826"
+                    alt="">
             </div>
 
-        <form action="">
-            <div class="inputBox">
-                <h3>where to</h3>
-                <input type="text" placeholder="place name">
-            </div>
-      
-      
-            <div class="inputBox">
-                <h3>how many</h3>
-                <input type="text" placeholder="number of guests">
-            </div>
-       
-       
-            <div class="inputBox">
-                <h3>arrivals</h3>
-                <input type="date">
-            </div>
-            <div class="inputBox">
-                <h3>leaving</h3>
-                <input type="date">
-            </div>
-            <input type="submit" class="btn" value="book now" >
+            <form action="">
+                <div class="inputBox">
+                    <h3>where to</h3>
+                    <input type="text" placeholder="place name">
+                </div>
+
+
+                <div class="inputBox">
+                    <h3>how many</h3>
+                    <input type="text" placeholder="number of guests">
+                </div>
+
+
+                <div class="inputBox">
+                    <h3>arrivals</h3>
+                    <input type="date">
+                </div>
+                <div class="inputBox">
+                    <h3>leaving</h3>
+                    <input type="date">
+                </div>
+                <input type="submit" class="btn" value="book now">
         </div>
-        
+
         </form>
     </section>
+    <!-- BOOK SECTION ENDS  -->
+
+    <!-- PACKAGES SECTION START -->
+
+    <section class="packages go" id="packages">
+
+        <h1 class="heading">
+            <span>p</span>
+            <span>a</span>
+            <span>c</span>
+            <span>k</span>
+            <span>a</span>
+            <span>g</span>
+            <span>e</span>
+            <span>s</span>
+        </h1>
+        <br><br>
+        <div class="box-container">
+
+            <!-- <div class="box">
+            <img src="https://imgcld.yatra.com/ytimages/image/upload/v1438931255/Mumbai_75.jpg" alt="" >
+            <div class="content">
+                <h3><ion-icon name="location-sharp"></ion-icon>mumbai</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.Veritatis,nam!</p>
+                <div class="stars">
+                    <ion-icon name="star-sharp"></ion-icon>
+                    <ion-icon name="star-sharp"></ion-icon>
+                    <ion-icon name="star-sharp"></ion-icon>
+                    <ion-icon name="star-sharp"></ion-icon>
+                    <ion-icon name="star-half-sharp"></ion-icon>
+                </div>
+                <div class="prise">$90.00 - <span>$120.00</span></div>
+                <a href="#" class="btn">book now</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="https://th.bing.com/th/id/R.53b9e85906a849980dbfa7aea3393fd1?rik=3cDTNA3svqZaVw&pid=ImgRaw&r=0" alt="" >
+            <div class="content">
+                <h3><ion-icon name="location-sharp"></ion-icon>hawaii</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.Veritatis,nam!</p>
+                <div class="stars">
+                    <ion-icon name="star-sharp"></ion-icon>
+                    <ion-icon name="star-sharp"></ion-icon>
+                    <ion-icon name="star-sharp"></ion-icon>
+                    <ion-icon name="star-sharp"></ion-icon>
+                    <ion-icon name="star-half-sharp"></ion-icon>
+                </div>
+                <div class="prise">$90.00 - <span>$120.00</span></div>
+                <a href="#" class="btn">book now</a>
+            </div>
+        </div>
+
+
+        <div class="box">
+            <img src="https://images.adsttc.com/media/images/5d44/14fa/284d/d1fd/3a00/003d/large_jpg/eiffel-tower-in-paris-151-medium.jpg?1564742900" alt="" >
+            <div class="content">
+                <h3><ion-icon name="location-sharp"></ion-icon>paris</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.Veritatis,nam!</p>
+                <div class="stars">
+                    <ion-icon name="star-sharp"></ion-icon>
+                    <ion-icon name="star-sharp"></ion-icon>
+                    <ion-icon name="star-sharp"></ion-icon>
+                    <ion-icon name="star-sharp"></ion-icon>
+                    <ion-icon name="star-half-sharp"></ion-icon>
+                </div>
+                <div class="prise">$90.00 - <span>$120.00</span></div>
+                <a href="#" class="btn">book now</a>
+            </div>
+        </div>
+
+
+        <div class="box">
+            <img src="https://de.best-wallpaper.net/wallpaper/1920x1440/1607/Tokyo-Japan-beautiful-city-night-buildings-shops-streets-lights_1920x1440.jpg" alt="" >
+            <div class="content">
+                <h3><ion-icon name="location-sharp"></ion-icon>tokyo</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.Veritatis,nam!</p>
+                <div class="stars">
+                    <ion-icon name="star-sharp"></ion-icon>
+                    <ion-icon name="star-sharp"></ion-icon>
+                    <ion-icon name="star-sharp"></ion-icon>
+                    <ion-icon name="star-sharp"></ion-icon>
+                    <ion-icon name="star-half-sharp"></ion-icon>
+                </div>
+                <div class="prise">$90.00 - <span>$120.00</span></div>
+                <a href="#" class="btn">book now</a>
+            </div>
+        </div>
+
+
+        <div class="box">
+            <img src="https://media.gettyimages.com/id/96318973/photo/pyramids-egypt.jpg?b=1&s=170667a&w=0&k=20&c=-NkjNfT_VGIy9f6ca6bnyKvQtNC765cXCe1XCMtbSOc=" alt="">
+            <div class="content">
+                <h3><ion-icon name="location-sharp"></ion-icon>egypt</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.Veritatis,nam!</p>
+                <div class="stars">
+                    <ion-icon name="star-sharp"></ion-icon>
+                    <ion-icon name="star-sharp"></ion-icon>
+                    <ion-icon name="star-sharp"></ion-icon>
+                    <ion-icon name="star-sharp"></ion-icon>
+                    <ion-icon name="star-half-sharp"></ion-icon>
+                </div>
+                <div class="prise">$90.00 - <span>$120.00</span></div>
+                <a href="#" class="btn">book now</a>
+            </div>
+        </div>
+
+
+        <div class="box">
+            <img src="https://th.bing.com/th/id/R.826ab3ddd16ab4af4021d45ad8878356?rik=6FkxPyS37dWNqQ&pid=ImgRaw&r=0" alt="">
+            <div class="content">
+                <h3><ion-icon name="location-sharp"></ion-icon>italy</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.Veritatis,nam!</p>
+                <div class="stars">
+                    <ion-icon name="star-sharp"></ion-icon>
+                    <ion-icon name="star-sharp"></ion-icon>
+                    <ion-icon name="star-sharp"></ion-icon>
+                    <ion-icon name="star-sharp"></ion-icon>
+                    <ion-icon name="star-half-sharp"></ion-icon>
+                </div>
+                <div class="prise">$90.00 - <span>$120.00</span></div>
+                <a href="#" class="btn">book now</a>
+            </div>
+        </div> -->
+        </div>
+        <!-- PACKAGES SECTION END -->
 
 
 
-    <script src="./script.js"></script>
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+        <br><br><br><br>
+
+
+        <!-- SERVICES SECTION START -->
+        <section class="service go" id="service">
+
+            <h1 class="heading">
+                <span>s</span>
+                <span>e</span>
+                <span>r</span>
+                <span>v</span>
+                <span>i</span>
+                <span>c</span>
+                <span>e</span>
+                <span>s</span>
+            </h1>
+            <br><br>
+            <div class="box-container">
+
+                <div class="box">
+                    <ion-icon name="business-outline"></ion-icon>
+                    <h3>affordable hotels</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur , adipisicing elit. Inventore commodi earum,
+                        quis voluptate exercitationem ut minima itaque iusto ipsum corrupti!</p>
+                </div>
+
+                <div class="box">
+                    <ion-icon name="restaurant-outline"></ion-icon>
+                    <h3>food and drinks</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur , adipisicing elit. Inventore commodi earum,
+                        quis voluptate exercitationem ut minima itaque iusto ipsum corrupti!</p>
+                </div>
+
+                <div class="box">
+                    <ion-icon name="earth-outline"></ion-icon>
+                    <h3>around the world</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur , adipisicing elit. Inventore commodi earum,
+                        quis voluptate exercitationem ut minima itaque iusto ipsum corrupti!</p>
+                </div>
+
+                <div class="box">
+                    <ion-icon name="airplane-outline"></ion-icon>
+                    <h3>affordable hotels</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur , adipisicing elit. Inventore commodi earum,
+                        quis voluptate exercitationem ut minima itaque iusto ipsum corrupti!</p>
+                </div>
+
+                <div class="box">
+                    <ion-icon name="body-outline"></ion-icon>
+                    <h3>adventure</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur , adipisicing elit. Inventore commodi earum,
+                        quis voluptate exercitationem ut minima itaque iusto ipsum corrupti!</p>
+                </div>
+
+                <div class="box">
+                    <ion-icon name="megaphone-outline"></ion-icon>
+                    <h3>safity guide</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur , adipisicing elit. Inventore commodi earum,
+                        quis voluptate exercitationem ut minima itaque iusto ipsum corrupti!</p>
+                </div>
+            </div>
+
+        </section>
+        <!-- SERVICES SECTION END -->
+
+        <!-- galery section start -->
+        <section class="galery go" id="galery">
+
+            <h1 class="heading">
+                <span>g</span>
+                <span>a</span>
+                <span>l</span>
+                <span>l</span>
+                <span>e</span>
+                <span>r</span>
+                <span>y</span>
+            </h1>
+            <br><br>
+            <div class="box-container">
+
+                <div class="box">
+                    <img src="https://hips.hearstapps.com/hbu.h-cdn.co/assets/16/25/2560x1280/landscape-1466475284-arkansas.jpg?resize=768:*"
+                        alt="">
+                    <div class="content">
+                        <h3>amazing places</h3>
+                        <p>Lorem ispum dolor sit amet consectetur adipisicing elit.Ducimus,tenetur</p>
+                        <a href="#" class="btn">see more</a>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <img src=" https://hips.hearstapps.com/hmg-prod/images/red-hot-air-balloons-over-jungle-nyaung-u-mandalay-royalty-free-image-1693419727.jpg?crop=0.681xw:1.00xh;0.272xw,0&resize=640:*"
+                        alt="">
+                    <div class="content">
+                        <h3>amazing places</h3>
+                        <p>Lorem ispum dolor sit amet consectetur adipisicing elit.Ducimus,tenetur</p>
+                        <a href="#" class="btn">see more</a>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="https://images.travelandleisureasia.com/wp-content/uploads/sites/4/2024/02/29184126/texas-state-capitol-1600x900.jpeg "
+                        alt="">
+                    <div class="content">
+                        <h3>amazing places</h3>
+                        <p>Lorem ispum dolor sit amet consectetur adipisicing elit.Ducimus,tenetur</p>
+                        <a href="#" class="btn">see more</a>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="https://www.chaptertravel.com/wp-content/uploads/2018/03/Asano-River-Kanazawa-Japan.jpg "
+                        alt="">
+                    <div class="content">
+                        <h3>amazing places</h3>
+                        <p>Lorem ispum dolor sit amet consectetur adipisicing elit.Ducimus,tenetur</p>
+                        <a href="#" class="btn">see more</a>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="https://media.cntraveler.com/photos/59a06e62cd44216d03660fd8/master/pass/Twelve-Apostles-GettyImages-459760175.jpg   "
+                        alt="">
+                    <div class="content">
+                        <h3>amazing places</h3>
+                        <p>Lorem ispum dolor sit amet consectetur adipisicing elit.Ducimus,tenetur</p>
+                        <a href="#" class="btn">see more</a>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="https://www.fraserway.com/dw/image/v2/BHGF_PRD/on/demandware.static/-/Library-Sites-FraserwaySharedLibrary/default/dw0f93c550/blogs/7%20NIGHTS:%20BANFF%20&%20JASPER%20NATIONAL%20PARK%20FROM%20VANCOUVER/Day%203%20-%20lakelouise_0.jpg"
+                        alt="">
+                    <div class="content">
+                        <h3>amazing places</h3>
+                        <p>Lorem ispum dolor sit amet consectetur adipisicing elit.Ducimus,tenetur</p>
+                        <a href="#" class="btn">see more</a>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="https://static.propertylogic.net/blog/1448297869/landscape_and_architecture_in_seoul_korea..jpg"
+                        alt="">
+                    <div class="content">
+                        <h3>amazing places</h3>
+                        <p>Lorem ispum dolor sit amet consectetur adipisicing elit.Ducimus,tenetur</p>
+                        <a href="#" class="btn">see more</a>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="https://www.ecstasycoffee.com/wp-content/uploads/2016/05/Rio-de-Janeiro.jpg" alt="">
+                    <div class="content">
+                        <h3>amazing places</h3>
+                        <p>Lorem ispum dolor sit amet consectetur adipisicing elit.Ducimus,tenetur</p>
+                        <a href="#" class="btn">see more</a>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="https://www.emperortraveline.com/wp-content/uploads/2022/07/Andaman.jpg" alt="">
+                    <div class="content">
+                        <h3>amazing places</h3>
+                        <p>Lorem ispum dolor sit amet consectetur adipisicing elit.Ducimus,tenetur</p>
+                        <a href="#" class="btn">see more</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- galery section end -->
+
+
+        <!-- review section start -->
+
+        <section class="review go" id="review">
+
+            <h1 class="heading">
+                <span>r</span>
+                <span>e</span>
+                <span>v</span>
+                <span>i</span>
+                <span>e</span>
+                <span>w</span>
+            </h1>
+          
+    <div class="box-container">
+       <div class="box">
+          <div class="stars">
+             <i class="fas fa-stars"><ion-icon name="star"></ion-icon></i>
+             <i class="fas fa-stars"><ion-icon name="star"></ion-icon></i>
+             <i class="fas fa-stars"><ion-icon name="star"></ion-icon></i>
+             <i class="fas fa-stars"><ion-icon name="star"></ion-icon></i>
+             <i class="fas fa-stars"><ion-icon name="star"></ion-icon></i>
+          </div>
+          <p> We have been buying our airline tickets here since 1998. Great service oriented group,
+            outstanding prices that can’t be beat, just keep me and my family and friends coming
+            back year after year. They even call us when there are specials! What more can you ask
+            for? Thank You (TA) for helping me create wonderful summer memories! </p>
+          
+          <div class="user">
+             <img src="https://media.istockphoto.com/id/1289220974/photo/joyful-natural-young-woman-smiling.jpg?s=612x612&w=0&k=20&c=y8HSzmDzDcSZd9MzZb9N7oPQaUxHaNUtAGBwRuE5wHY=" alt="">
+             <div class="user-info">
+                <h3>Maryjane H.</h3> 
+             </div>
+           </div>
+           <span class="fas fa-quote-right"><ion-icon name="chatbubble-ellipses"></ion-icon></span>
+       </div>
+    
+       <div class="box">
+          <div class="stars">
+             <i class="fas fa-stars"><ion-icon name="star"></ion-icon></i>
+             <i class="fas fa-stars"><ion-icon name="star"></ion-icon></i>
+             <i class="fas fa-stars"><ion-icon name="star"></ion-icon></i>
+             <i class="fas fa-stars"><ion-icon name="star"></ion-icon></i>
+             <i class="fas fa-stars"><ion-icon name="star"></ion-icon></i>
+          </div>
+          <p> AN was such a blessing in our vacation planning! We had originally planned on going
+            somewhere else and I’m so thankful that (AN) was able to step in to help us create the
+            best vacation possible. He was always very helpful no matter what.</p><br><br>
+          <div class="user">
+             <img src="https://t3.ftcdn.net/jpg/03/02/88/46/360_F_302884605_actpipOdPOQHDTnFtp4zg4RtlWzhOASp.jpg" alt="">
+             <div class="user-info">
+                <h3>Nazzareno S.</h3>
+             </div>
+           </div>
+           <span class="fas fa-quote-right"><ion-icon name="chatbubble-ellipses"></ion-icon></span>
+       </div>
+    
+       <div class="box">
+          <div class="stars">
+             <i class="fas fa-stars"><ion-icon name="star"></ion-icon></i>
+             <i class="fas fa-stars"><ion-icon name="star"></ion-icon></i>
+             <i class="fas fa-stars"><ion-icon name="star"></ion-icon></i>
+             <i class="fas fa-stars"><ion-icon name="star"></ion-icon></i>
+             <i class="fas fa-stars"><ion-icon name="star"></ion-icon></i>
+          </div>
+          <p>Great Experience with (TA). one of customer service agent who’s name is (AN). She is
+            help a lot to get best deal. I found very easy the way she gave me all information for
+            book my flight. I very strongly advise other traveller to use (TA). its very friendly
+            and easy to use. Thank you very much.</p>
+          <div class="user">
+             <img src="https://images.pexels.com/photos/39866/entrepreneur-startup-start-up-man-39866.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+             <div class="user-info">
+                <h3>Owen R.</h3>
+             </div>
+           </div>
+           <span class="fas fa-quote-right"><ion-icon name="chatbubble-ellipses"></ion-icon></span>
+       </div>
+    
+    </div> 
+    </section>
+        <footer class="footer">
+            <div class="box-containeri">
+                <div class="boxi">
+                    <h3>Contact Us</h3>
+                    <p>Email:Info@example.com</p>
+                    <p>Phone:+111 111 111</p>
+                    <p>Address: street Maulenova 92 </p>
+                </div>
+                <div class="boxi">
+                    <h3>branch locations</h3>
+                    <a href="#">india</a>
+                    <a href="#">USA</a>
+                    <a href="#">japan</a>
+                    <a href="#">france</a>
+                    <a href="#">egypt</a>
+                </div>
+                <div class="boxi">
+                    <h3>Quick Links</h3>
+                    <a href="#">Home</a>
+                    <a href="#">About</a>
+                    <a href="#">Services</a>
+                    <a href="#">Products</a>
+                    <a href="#">Contact</a>
+                </div>
+                <div class="boxi">
+                    <h3>Follow Us</h3>
+                    <a href="#">facebook</a>
+                    <a href="#">instagram</a>
+                    <a href="#">twitter</a>
+                    <a href="#">linkedin</a>
+                </div>
+            </div>
+            <h1 class="credit">Amjilt <span>2024</span> | cyber school</h1>
+        </footer>
+
+
+        <script src="./script.js"></script>
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
 </body>
 

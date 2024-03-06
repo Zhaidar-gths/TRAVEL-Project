@@ -15,22 +15,24 @@ html {
     font-size: 62.5%;
 }
 
-section {
+.go section {
     padding: 40px 9%;
 }
 
-.heading{
+.heading {
     text-align: center;
     padding: 25px 0;
 }
-.heading span{
+
+.heading span {
     font-size: 3.5rem;
     background: rgba(255, 165, 0, .2);
     color: orange;
     border-radius: 5px;
     padding: 12px 11px;
 }
-.heading span.space{
+
+.heading span.space {
     background: none;
 }
 
@@ -40,15 +42,17 @@ section {
     background: #fda300;
     color: #fff;
     padding: 13px 10px;
-    border: 3px solid ;
+    border: 2px solid;
     cursor: pointer;
     font-size: 17px;
-    border-radius: 5px;
+    border-radius: 3px;
+
 }
 
 .btn:hover {
-    background-color: #bb620a;
+    background-color: #fcd537;
     color: #fff;
+
 }
 
 header {
@@ -61,6 +65,7 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 26px 9%;
+    z-index: 1000;
 }
 
 header .logo {
@@ -77,14 +82,11 @@ header .logo span {
 header .links a {
     color: #fff;
     font-size: 20px;
-    margin: 10px; 
+    margin: 10px;
 }
 
 header .links a:hover {
-  color: orange;
-
-
-
+    color: orange;
 }
 
 header .icons i {
@@ -108,17 +110,21 @@ header .search-bar-container {
     border-top: 3px solid rgba(255, 255, 225, 2);
     display: flex;
     align-items: center;
-    justify-content: center; /* Центрируем содержимое горизонтально */
+    justify-content: center;
+    /* Центрируем содержимое горизонтально */
     z-index: 1001;
     display: none;
 }
 
 header .search-bar-container.active {
-    display: flex; /* Используем flex вместо block, чтобы элементы были в одной строке */
+    display: flex;
+    /* Используем flex вместо block, чтобы элементы были в одной строке */
 }
 
 header .search-bar-container #search-bar {
-    width: 100%; width: -35px; /* Учитываем ширину иконки поиска */
+    width: 100%;
+    width: -35px;
+    /* Учитываем ширину иконки поиска */
     padding: 5px;
     text-transform: none;
     color: #212321f1;
@@ -130,7 +136,8 @@ header .search-bar-container label {
     color: #fff;
     cursor: pointer;
     font-size: 23px;
-    margin-left: 10px; /* Добавляем отступ справа для разделения между иконкой и текстовым полем */
+    margin-left: 10px;
+    /* Добавляем отступ справа для разделения между иконкой и текстовым полем */
 }
 
 header .search-bar-container label:hover {
@@ -243,7 +250,7 @@ header .search-bar-container label:hover {
 #popup form p {
     display: flex;
     align-items: center;
-   
+
 }
 
 #popup label[for="remember"] {
@@ -300,7 +307,7 @@ header .search-bar-container label:hover {
     height: 100%;
     width: 100%;
     object-fit: cover;
-  
+
 }
 
 .home .controls {
@@ -323,47 +330,75 @@ header .search-bar-container label:hover {
 
 .home .controls .vid-btn.active {
     background-color: orange;
-} 
+}
 
 
 
 
 /* ABOUT US  */
 
+.about {
+    text-align: center;
+    padding: 100px;
+}
 
 
+.about p {
+    font-family: "Dongle-regular";
+    font-size: 20px;
+    margin-bottom: 40px;
+}
 
+.team-members {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.team-member img {
+    width: 300px;
+    height: 300px;
+    margin: 20px;
+    object-fit: cover;
+}
+
+.team-member h4 {
+    font-family: "Dongle-bold";
+    font-size: 2rem;
+}
+
+/* ABOUT US END */
 
 
 
 /* BOOK NOW SECTION */
-.book .row{
+.book .row {
     display: flex;
     flex-direction: row;
     gap: 15px;
     align-items: center;
 }
 
-.book .row .image{
+.book .row .image {
     flex: 0.9 1 140px;
 }
 
-.book .row .image img{
+.book .row .image img {
     width: 100%;
 }
 
-.book .row form{
+.book .row form {
     flex: 1 1 140px;
     padding: 20px;
     box-shadow: 0 16px 32px rgba(0, 0, 0, .1);
     border-radius: 10px;
 }
 
-.book .row form .inputBox{
+.book .row form .inputBox {
     padding: 10px 0;
 }
 
-.book .row form .inputBox input{
+.book .row form .inputBox input {
     width: 100%;
     padding: 5px;
     border: 3px solid rgba(0, 0, 0, .1);
@@ -372,8 +407,302 @@ header .search-bar-container label:hover {
     text-transform: none;
 }
 
-.book .row form .inputBox h3{
+.book .row form .inputBox h3 {
     font-size: 20px;
     padding: 10px 0;
     color: #666;
 }
+
+/* BOOK SECTION END */
+
+
+/* pacages section */
+
+.packages .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    margin: 50px;
+}
+
+
+.packages .box-container .box {
+    flex: 1 1 330px;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .1);
+}
+
+
+.packages .box-container .box img {
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.packages .box-container .box .content {
+    padding: 12px;
+}
+
+.packages .box-container .box .content h3 {
+    font-size: 20px;
+    color: #333;
+}
+
+.packages .box-container .box .content h3 ion-icon {
+    color: orange;
+}
+
+.packages .box-container .box .content p {
+    font-size: 17px;
+    color: #666;
+    padding: 10px 0;
+}
+
+
+.packages .box-container .box .content .stars ion-icon {
+    font-size: 17px;
+    color: orange;
+}
+
+.packages .prise {
+    font-size: 15px;
+    color: #333;
+    padding: 5px;
+}
+
+.packages .box-container .box:hover {
+    box-shadow: 0 15px 20px rgba(0, 0, 0, .1);
+}
+
+/* packages section end */
+
+
+
+
+/* service section start */
+.service .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.service .box-container .box {
+    flex: 1 1 330px;
+    border-radius: 10px;
+    padding: 5px;
+    text-align: center;
+}
+
+.service .box-container .box ion-icon {
+    padding: 10px;
+    font-size: 65px;
+    color: orange;
+}
+
+.service .box-container .box h3 {
+    font-size: 25px;
+    color: #333;
+}
+
+.service .box-container .box p {
+    font-size: 15px;
+    color: #666;
+    padding: 10px 0;
+}
+
+.service .box-container .box:hover {
+    box-shadow: 0 5px 20px orange;
+}
+
+/* service section end */
+
+
+/* galery start */
+
+.galery .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.galery .box-container .box {
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .1);
+    border: 10px solid #fff;
+    border-radius: 1 5px;
+    flex: 1 1 330px;
+    height: 300px;
+    position: relative;
+}
+
+.galery .box-container .box img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.galery .box-container .box .content {
+    position: absolute;
+    top: -100%;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    background: rgba(0, 0, 0, .7);
+    padding: 30px;
+    padding-top: 25px;
+}
+
+.galery .box-container .box:hover .content {
+    top: 0
+}
+
+.galery .box-container .box .content h3 {
+    font-size: 25px;
+    color: #e49f26;
+    padding: 13px;
+
+}
+
+.galery .box-container .box .content p {
+    font-size: 15px;
+    color: #eee;
+    padding: 15px 0;
+
+}
+/* galery section end */
+
+
+/* review section start */
+
+.review .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .review .box-container .box{
+    flex: 1 1 26px;
+    box-shadow: 0 .5px 15px rgba(224, 196, 72, 0.1);
+    border-radius: .15px;
+    padding: 13px 12px;
+    position: relative;
+    background-color: #f1bf6a;
+  }
+  
+  
+  .review .box-container .box .fa-quote-right{
+    position:absolute;
+    bottom: 12px;right: 12px;
+    font-size: 46px;
+    color: #eee;
+  }
+  .review .box-container .box .stars i{
+    color: rgb(249, 247, 243);
+    font-size: 20px;
+  }
+  .review .box-container .box p{
+    color: #ffffff;
+    font-size: 15px;
+    line-height: 1.5;
+    padding-top: 20px;
+  
+  }
+  
+  .review .box-container .box .user{
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+  
+  }
+  .review .box-container .box .user img{
+    height: 66px;
+    width: 66px;
+    border-radius:50% ;
+    object-fit: cover;
+    margin-right: 10px;
+  }
+  .review .box-container .box .user h3{
+    font-size: 15px;
+    color: #333;
+  }
+  .review .box-container .box .user h3{
+    font-size: 15px;
+    color: #666;
+  }
+  /* ОТЗЫВ */
+
+/* review section end */
+
+
+/* footer */
+
+.footer {
+    background: #343434;
+    padding: 20px;
+    /* Adjust padding as needed */
+    box-sizing: border-box;
+    /* Include padding and border in the element's total width and height */
+    height: auto;
+    /* or height: 100%; depending on your layout */
+    width: 100%;
+    margin: 0;
+}
+
+.footer .box-containeri {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.footer .box-containeri .boxi {
+    padding: 10px 0;
+    flex: 1 125px;
+    width: 100%;
+}
+
+.footer .box-containeri .boxi h3 {
+    font-size: 23px;
+    padding: 5px 0;
+    color: white;
+}
+
+.footer .box-containeri .boxi p {
+    font-size: 13px;
+    padding: 5px;
+    color: white;
+}
+
+.footer .box-containeri .boxi a {
+    display: block;
+    font-size: 15px;
+    padding: 7px 0;
+    color: white;
+}
+
+.footer .box-containeri .boxi a:hover {
+    color: #e49f26;
+    text-decoration: underline;
+}
+
+.footer .credit {
+    text-align: center;
+    padding: 20px 10px;
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: normal;
+    color: #fff;
+    border-top: .1rem solid rgba(0, 0, 0, 0.892);
+}
+
+.footer .credit span {
+    color: #e49f26;
+}
+
+
+
+
+
+
+

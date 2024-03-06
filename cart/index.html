@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="empty-cart hidden"> <p>Cart is empty.</p> </div>
+   
+        <main>
+            <div class="cart-left">
+                <div class="cart-items-top">
+                    <h2>YOUR Traveling : <span id="cart-size"></span></h2>
+                    <!-- <button id="clear-cart">Empty trash</button> -->
+                </div>
+                <div id="display-cart">
+                    <!-- <button><ion-icon name="chevron-up-outline"></ion-icon><ion-icon name="chevron-down-outline"></ion-icon></button> -->
+                </div>
+                <div class="cart-items">
+                </div>
+            </div>
+            <div class="cart-right">
+                <div class="purchase-details">
+                    <h2></h2>
+                    <table>
+                        <tr>
+                            <td>Sum of things</td>
+                            <td id="products-price">0 ₸</td>
+                        </tr>
+                        <!-- <tr>
+                            <td>Сost of delivery</td>
+                            <td id="delivery-price">0 ₸</td>
+                        </tr> -->
+                        <tr>
+                            <td><b>Subtotal</b></td>
+                            <td><b id="total-price">0 ₸</b></td>
+                        </tr>
+                    </table>
+                    <button>PROCEED TO CHECKOUT</button>
+                </div>
+            </div>
+        </main>
+       
+  
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
